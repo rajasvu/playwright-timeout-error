@@ -1,5 +1,5 @@
 # playwright-timeout
-This is a script to use playwright to scrape etherscan.io, but it has timeout issue in circleCI so far.
+This is a script to use playwright to scrape etherscan.io, but it has timeout issue in ```circleCI``` environment so far.
 
 
 ### How to install
