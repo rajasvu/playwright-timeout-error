@@ -4,6 +4,5 @@ This is a script to use playwright to scrape etherscan.io, but it has timeout is
 
 ### How to install
 1. ```pip3 install playwright```
-2. ```pip3 install tenacity```
-3. ```playwright install```
-4. ```pip3 install pytest```
+2. ```playwright install```
+3. ```pip3 install pytest```
