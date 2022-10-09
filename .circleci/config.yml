@@ -19,6 +19,9 @@ jobs:
           name: "Install playright"
           command: playwright install
       - run:
+          name: "Install dependencies to run browsers"
+          command: playwright install-deps
+      - run:
           name: "Run test case"
           command: pytest test.py
 
