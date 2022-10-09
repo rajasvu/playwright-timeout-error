@@ -1,16 +1,16 @@
 version: 2.1
 
 jobs:
-  say-hello:
+  build:
     docker:
       - image: cimg/python:3.8
     steps:
       - checkout
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+          name: "check available packages"
+          command: pip3 list
 
 workflows:
-  say-hello-workflow:
+  test-execution:
     jobs:
-      - say-hello
+      - build
