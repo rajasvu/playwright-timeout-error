@@ -7,8 +7,17 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "echo python version"
+          command: python -V
+      - run:
           name: "check available packages"
           command: pip3 list
+      - run:
+          name: "Install required packages"
+          command: pip3 install -r requirements
+      - run:
+          name: "Run test case"
+          command: python test.py
 
 workflows:
   test-execution:
