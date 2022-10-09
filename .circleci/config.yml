@@ -17,7 +17,7 @@ jobs:
           command: pip3 install -r requirements.txt
       - run:
           name: "Run test case"
-          command: pytest
+          command: pytest test.py
 
 workflows:
   test-execution:
